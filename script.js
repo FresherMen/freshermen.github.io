@@ -1,7 +1,7 @@
 /**
- * Ankur Pal - AI/ML Software Engineer & Cloud Architect Portfolio
- * Interactive Script
- * Zero external dependencies. Zero emojis.
+ * Ankur Pal - Precision AI/ML Software Engineer & Cloud Architect
+ * Haute Horlogerie / Audemars Piguet Inspired Interactive Controller
+ * Pure Engineering. Zero Emojis.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,31 +9,32 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectFilters();
   initMobileNav();
   initCounterAnimation();
+  initBarChartAnimation();
   initCopyEmail();
   initCardSpotlights();
   initScrollSpy();
 });
 
 /**
- * 1. Smooth Dynamic Role Rotator
+ * 1. Precision Calibre Role Rotator
  */
 function initTypingEffect() {
   const roleEl = document.getElementById('typing-role');
   if (!roleEl) return;
 
   const roles = [
-    'Production Hybrid RAG (ChromaDB + BM25 + RRF)',
+    'Production Hybrid RAG & Reciprocal Rank Fusion',
     'Autonomous ReAct Reasoning Agents',
     'Computer Vision & Real-Time Video (30 FPS)',
     'High-Throughput FastAPI Microservices',
-    'Cloud Deployments on AWS & GCP with Docker',
+    'Cloud Clusters on AWS & GCP with Docker',
     'MLOps Model Benchmarking & Fine-Tuning'
   ];
 
   let roleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
-  let typingDelay = 80;
+  let typingDelay = 70;
 
   function type() {
     const currentRole = roles[roleIndex];
@@ -41,16 +42,16 @@ function initTypingEffect() {
     if (isDeleting) {
       charIndex--;
       roleEl.textContent = currentRole.substring(0, charIndex);
-      typingDelay = 40;
+      typingDelay = 35;
     } else {
       charIndex++;
       roleEl.textContent = currentRole.substring(0, charIndex);
-      typingDelay = 75;
+      typingDelay = 65;
     }
 
     if (!isDeleting && charIndex === currentRole.length) {
       isDeleting = true;
-      typingDelay = 2200; // Pause at full word
+      typingDelay = 2400; // Pause at full word
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       roleIndex = (roleIndex + 1) % roles.length;
@@ -72,7 +73,6 @@ function initProjectFilters() {
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle active state
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -122,11 +122,11 @@ function initMobileNav() {
 }
 
 /**
- * 4. Animated Metric Counters
+ * 4. Chronometer Animated Counters
  */
 function initCounterAnimation() {
-  const statNumbers = document.querySelectorAll('.stat-number');
-  if (!statNumbers.length) return;
+  const dialValues = document.querySelectorAll('.dial-value');
+  if (!dialValues.length) return;
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
@@ -134,10 +134,12 @@ function initCounterAnimation() {
         const el = entry.target;
         const target = parseInt(el.getAttribute('data-target'), 10);
         const originalText = el.textContent;
-        const suffix = originalText.includes('%') ? '%' : (originalText.includes('+') ? '+' : '');
+        const suffix = originalText.includes('%') ? '%' : 
+                       (originalText.includes('FPS') ? ' FPS' : 
+                       (originalText.includes('+') ? '+' : ''));
 
         let current = 0;
-        const duration = 1500;
+        const duration = 1400;
         const stepTime = Math.max(Math.floor(duration / target), 30);
 
         const timer = setInterval(() => {
@@ -153,13 +155,39 @@ function initCounterAnimation() {
         obs.unobserve(el);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.4 });
 
-  statNumbers.forEach(stat => observer.observe(stat));
+  dialValues.forEach(dial => observer.observe(dial));
 }
 
 /**
- * 5. Copy Email to Clipboard
+ * 5. Animated Benchmark Comparison Bar Tracks
+ */
+function initBarChartAnimation() {
+  const barTracks = document.querySelectorAll('.bar-track');
+  if (!barTracks.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const fills = entry.target.querySelectorAll('.bar-fill');
+        fills.forEach(fill => {
+          const currentWidth = fill.style.width;
+          fill.style.width = '0%';
+          setTimeout(() => {
+            fill.style.width = currentWidth;
+          }, 100);
+        });
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  barTracks.forEach(track => observer.observe(track));
+}
+
+/**
+ * 6. Copy Email to Clipboard
  */
 function initCopyEmail() {
   const copyBtn = document.getElementById('copy-email-btn');
@@ -183,7 +211,7 @@ function initCopyEmail() {
       }
 
       toast.classList.add('show');
-      copyBtn.querySelector('.copy-text').textContent = 'Copied!';
+      copyBtn.querySelector('.copy-text').textContent = 'Dispatched';
 
       setTimeout(() => {
         toast.classList.remove('show');
@@ -196,10 +224,10 @@ function initCopyEmail() {
 }
 
 /**
- * 6. Mouse Spotlight Effect on Interactive Cards
+ * 7. Mouse Spotlight on Precision Cards
  */
 function initCardSpotlights() {
-  const cards = document.querySelectorAll('.project-card, .skill-card, .feature-card, .channel-card');
+  const cards = document.querySelectorAll('.project-card, .skill-card, .luxury-card, .channel-card, .chrono-dial');
 
   cards.forEach(card => {
     card.addEventListener('mousemove', e => {
@@ -214,7 +242,7 @@ function initCardSpotlights() {
 }
 
 /**
- * 7. Active Navigation Link on Scroll
+ * 8. Active Navigation Link on Scroll
  */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
