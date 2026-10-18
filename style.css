@@ -130,6 +130,56 @@ body {
   background: radial-gradient(circle, rgba(197, 160, 89, 0.2) 0%, transparent 70%);
 }
 
+/* AI & LLM Model Training Blueprint Watermarks */
+.ap-blueprint-watermark {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.16;
+  transition: opacity var(--trans-base);
+}
+
+.hero-blueprint-watermark {
+  top: 50%;
+  right: -80px;
+  transform: translateY(-50%);
+  width: 780px;
+  max-width: 60vw;
+  height: 90%;
+}
+
+.overview-blueprint-watermark {
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  width: 740px;
+  max-width: 55vw;
+  height: 85%;
+}
+
+.schematics-blueprint-watermark {
+  top: 30px;
+  right: -50px;
+  width: 750px;
+  max-width: 55vw;
+  height: 90%;
+}
+
+.skills-blueprint-watermark {
+  bottom: 0;
+  right: -40px;
+  width: 720px;
+  max-width: 55vw;
+  height: 85%;
+}
+
+.ap-blueprint-watermark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 /* Typography Hierarchy */
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
@@ -351,18 +401,29 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: clamp(0.75rem, 1.15vw, 1.45rem);
 }
 
 .nav-link {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.11em;
   color: var(--slate-silver);
   position: relative;
   padding: 0.35rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.nav-idx {
+  display: none;
+  font-size: 0.65rem;
+  color: var(--gold-light);
+  opacity: 0.85;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -384,23 +445,46 @@ a {
   width: 100%;
 }
 
+.mobile-drawer-cta {
+  display: none;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .mobile-toggle {
   display: none;
-  background: transparent;
-  border: none;
-  color: var(--titanium-white);
+  background: rgba(197, 160, 89, 0.08);
+  border: 1px solid var(--gold-hairline);
+  color: var(--gold-light);
   cursor: pointer;
-  padding: 0.3rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: var(--radius-xs);
+  transition: all var(--trans-fast);
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.mobile-toggle:hover {
+  background: rgba(197, 160, 89, 0.18);
+  border-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.mobile-toggle .icon-menu {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 .mobile-toggle .icon-close {
   display: none;
+  width: 20px;
+  height: 20px;
 }
 
 /* Haute Horlogerie Hero Section */
@@ -1776,7 +1860,107 @@ a {
   transform: translateY(0);
 }
 
-/* Responsive Breakpoints */
+/* Responsive Breakpoints & Mobile Navigation Drawer */
+@media (max-width: 1140px) {
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 67px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: calc(100vh - 67px);
+    overflow-y: auto;
+    background: rgba(8, 10, 14, 0.98);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border-bottom: 2px solid var(--gold-hairline-bright);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    padding: 1.5rem 1.75rem 2.25rem;
+    gap: 0.65rem;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+    animation: apDrawerSlide 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .nav-links.active .nav-link {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    padding: 0.85rem 1.15rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 2px solid transparent;
+    border-radius: var(--radius-xs);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.85rem;
+    color: var(--platinum-light);
+  }
+
+  .nav-links.active .nav-link::after {
+    display: none;
+  }
+
+  .nav-links.active .nav-link:hover,
+  .nav-links.active .nav-link.active {
+    background: rgba(197, 160, 89, 0.08);
+    border-color: var(--gold-hairline);
+    border-left-color: var(--gold-light);
+    color: var(--gold-light);
+    transform: translateX(4px);
+  }
+
+  .nav-links.active .nav-idx {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .mobile-drawer-cta {
+    display: block;
+    margin-top: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gold-hairline);
+    width: 100%;
+  }
+
+  .mobile-drawer-cta .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .mobile-toggle.active .icon-menu {
+    display: none;
+  }
+
+  .mobile-toggle.active .icon-close {
+    display: block;
+  }
+}
+
+@keyframes apDrawerSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -1821,39 +2005,19 @@ a {
   .contact-channels.two-col {
     grid-template-columns: 1fr;
   }
+
+  .ap-blueprint-watermark {
+    opacity: 0.09;
+    transform: scale(0.9);
+  }
+
+  .hero-blueprint-watermark {
+    right: -100px;
+    width: 600px;
+  }
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: rgba(5, 6, 8, 0.98);
-    backdrop-filter: blur(24px);
-    border-bottom: 1px solid var(--gold-hairline);
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 1.25rem;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .mobile-toggle {
-    display: block;
-  }
-
-  .mobile-toggle.active .icon-menu {
-    display: none;
-  }
-
-  .mobile-toggle.active .icon-close {
-    display: block;
-  }
-
   .skills-grid.five-cards, .projects-grid, .luxury-grid.three-col {
     grid-template-columns: 1fr;
   }
@@ -1879,6 +2043,63 @@ a {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 7vw, 3.2rem);
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .ap-blueprint-watermark {
+    opacity: 0.07;
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-actions #btn-nav-resume {
+    display: none;
+  }
+
+  .logo-crest {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+
+  .logo-main-name {
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+  }
+
+  .logo-sub-tag {
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .chrono-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+
+  .dial-value {
+    font-size: 1.45rem;
+  }
+
+  .dial-label {
+    font-size: 0.62rem;
+  }
+
+  .luxury-bezel-frame {
+    padding: 1.15rem;
+    max-width: 320px;
   }
 }
 

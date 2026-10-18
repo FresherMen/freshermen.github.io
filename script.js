@@ -105,19 +105,41 @@ function initMobileNav() {
   const toggleBtn = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-link');
+  const navbar = document.getElementById('navbar');
 
   if (!toggleBtn || !navMenu) return;
 
-  toggleBtn.addEventListener('click', () => {
-    toggleBtn.classList.toggle('active');
-    navMenu.classList.toggle('active');
-  });
+  function closeMenu() {
+    toggleBtn.classList.remove('active');
+    navMenu.classList.remove('active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleMenu(e) {
+    e.stopPropagation();
+    const isActive = navMenu.classList.toggle('active');
+    toggleBtn.classList.toggle('active', isActive);
+    toggleBtn.setAttribute('aria-expanded', String(isActive));
+  }
+
+  toggleBtn.addEventListener('click', toggleMenu);
 
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      toggleBtn.classList.remove('active');
-      navMenu.classList.remove('active');
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close when clicking outside of navbar
+  document.addEventListener('click', (e) => {
+    if (navbar && !navbar.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
   });
 }
 
