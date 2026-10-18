@@ -154,7 +154,9 @@ function initCounterAnimation() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
-        const target = parseInt(el.getAttribute('data-target'), 10);
+        const targetAttr = el.getAttribute('data-target');
+        const target = parseInt(targetAttr, 10);
+        if (isNaN(target) || target <= 0) return;
         const originalText = el.textContent;
         const suffix = originalText.includes('%') ? '%' : 
                        (originalText.includes('FPS') ? ' FPS' : 
