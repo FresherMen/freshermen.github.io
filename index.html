@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Ankur Pal — AI/ML Software Engineer specializing in Production GenAI, Hybrid RAG, Computer Vision, Cloud Infrastructure (AWS/GCP), and MLOps." />
+  <meta name="keywords" content="Ankur Pal, AI Engineer, Machine Learning, RAG, GenAI, LangChain, Computer Vision, YOLO, Python, FastAPI, Docker, AWS, GCP" />
+  <meta name="author" content="Ankur Pal" />
+  <meta property="og:title" content="Ankur Pal | AI/ML Software Engineer & Cloud Architect" />
+  <meta property="og:description" content="4+ years designing and deploying enterprise AI systems, hybrid RAG pipelines, computer vision analytics, and containerized microservices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://freshermen.github.io" />
+  <title>Ankur Pal | AI/ML Software Engineer & Cloud Architect</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-box">AP</span>
+        <span class="logo-text">Ankur Pal<span class="dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="./Ankur_Pal_Resume.pdf" download class="btn btn-outline btn-sm" id="btn-nav-resume">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Resume PDF</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill" id="hero-status">
+            <span class="pulse-indicator"></span>
+            <span class="status-text">Available for High-Impact AI & Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering Production <br />
+            <span class="gradient-text">AI Systems & Cloud Architecture</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">Specialized in</span>
+            <span class="typing-role" id="typing-role">Production Hybrid RAG</span>
+          </div>
+
+          <p class="hero-description">
+            AI/ML Software Engineer with 4+ years of hands-on experience designing, training, and deploying deep learning pipelines, autonomous agentic workflows, and high-throughput microservices across AWS and GCP for international clients.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+              <span>View Projects</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#experience" class="btn btn-secondary" id="btn-hero-experience">
+              <span>Work Experience</span>
+            </a>
+            <a href="./Ankur_Pal_Resume.pdf" target="_blank" class="btn btn-outline" id="btn-hero-resume">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="4">4+</span>
+              <span class="stat-label">Years AI/ML Exp</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="92">92%</span>
+              <span class="stat-label">NHAI Detection mAP</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="30">30</span>
+              <span class="stat-label">FPS Real-Time ANPR</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="6">6+</span>
+              <span class="stat-label">Production Repos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-glow"></div>
+            <div class="image-wrapper">
+              <img src="assets/images/ankur_pal.jpeg" alt="Ankur Pal - AI/ML Software Engineer" class="profile-img" />
+            </div>
+            <div class="profile-info-card">
+              <div class="profile-badge-row">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="profile-creds">
+                <span class="creds-name">Ankur Pal</span>
+                <span class="creds-title">AI/ML Software Engineer &bull; Mohali, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section overview-section" id="overview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Executive Summary</span>
+          <h2 class="section-title">Architecting Robust AI from Conception to Production</h2>
+          <p class="section-subtitle">
+            Delivering scalable machine learning solutions, multimodal computer vision architectures, and production-grade generative AI services with measurable operational cost reduction.
+          </p>
+        </div>
+
+        <div class="overview-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 class="feature-title">End-to-End ML Lifecycle</h3>
+            <p class="feature-desc">
+              Data ingestion, synthetic data pipelines, dataset curation, model training & fine-tuning (LoRA / QLoRA), rigorous offline evaluation, and seamless containerized microservice serving.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3 class="feature-title">Cloud Infrastructure & MLOps</h3>
+            <p class="feature-desc">
+              Multi-region cloud infrastructure on AWS (EC2, S3) and GCP (L40 GPU clusters). Containerized microservices with Docker Compose, ONNX Runtime acceleration, and automated CI/CD evaluation pipelines.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3 class="feature-title">International Client Impact</h3>
+            <p class="feature-desc">
+              Delivered enterprise AI applications for international organizations across Australia, Japan, Saudi Arabia, and Brazil, consistently reducing manual processing overhead by 35% to 70%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Deep Technical Expertise Across the Modern AI Stack</h2>
+          <p class="section-subtitle">
+            From low-level Python backend engineering and cloud deployments to cutting-edge generative AI and real-time computer vision systems.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Python Software Engineering -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Python Software Engineering</h3>
+                <span class="skill-card-subtitle">Backend Architecture & APIs</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Languages:</strong> Python (3.10+), SQL (PostgreSQL, MySQL), Bash / Shell</li>
+              <li><strong>Frameworks:</strong> FastAPI, Django, Flask, Pydantic (v2), Uvicorn</li>
+              <li><strong>Architecture:</strong> RESTful API Design, Microservices, AsyncIO, OOP Design Patterns</li>
+              <li><strong>Quality & Tooling:</strong> PyTest, uv, Poetry, venv, Git Workflow, Type Annotations</li>
+            </ul>
+            <div class="skill-badge-row">
+              <span class="badge">FastAPI</span>
+              <span class="badge">Django</span>
+              <span class="badge">AsyncIO</span>
+              <span class="badge">Pydantic</span>
+              <span class="badge">PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Cloud Infrastructure & MLOps -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Cloud Infrastructure & MLOps</h3>
+                <span class="skill-card-subtitle">AWS, GCP & High-Throughput Serving</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Cloud Platforms:</strong> AWS (EC2, S3), GCP (Compute Engine, L40 GPU clusters), Azure</li>
+              <li><strong>Containerization:</strong> Docker, Docker Compose, Multi-Stage Builds, Registries</li>
+              <li><strong>Inference Optimization:</strong> ONNX Runtime Acceleration, Model Quantization</li>
+              <li><strong>MLOps Practices:</strong> LoRA / QLoRA Fine-Tuning, CI/CD Automated Benchmarking, Linux Admin</li>
+            </ul>
+            <div class="skill-badge-row">
+              <span class="badge">AWS EC2</span>
+              <span class="badge">GCP L40</span>
+              <span class="badge">Docker</span>
+              <span class="badge">ONNX</span>
+              <span class="badge">QLoRA</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Generative AI, RAG & Agents -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Generative AI & Agentic RAG</h3>
+                <span class="skill-card-subtitle">Enterprise Search & Autonomous Loops</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Retrieval Architectures:</strong> Hybrid RAG (Dense Embeddings + Sparse BM25 + RRF)</li>
+              <li><strong>Agentic Frameworks:</strong> LangChain, LangGraph, ReAct Loops, Native Tool Dispatch</li>
+              <li><strong>Vector Databases:</strong> ChromaDB, Pinecone Serverless, MiniLM Embeddings</li>
+              <li><strong>Evaluation & Quality:</strong> RAGAS Automated Evaluation, Contextual Compression</li>
+            </ul>
+            <div class="skill-badge-row">
+              <span class="badge">LangChain</span>
+              <span class="badge">LangGraph</span>
+              <span class="badge">ChromaDB</span>
+              <span class="badge">Pinecone</span>
+              <span class="badge">RAGAS</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Computer Vision & Real-Time Video -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Computer Vision & Video Analytics</h3>
+                <span class="skill-card-subtitle">Real-Time Streams & Landmark Tracking</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Object Detection:</strong> YOLO (v5/v8), Real-Time Video Analytics (30 FPS), Road Anomaly Detection</li>
+              <li><strong>Biometrics & Facial AI:</strong> Dlib 68-Point Facial Landmarks, Eye Aspect Ratio (EAR), YuNet</li>
+              <li><strong>License Plate & OCR:</strong> Real-time ANPR with OCR & Automated Privacy Plate Blurring</li>
+              <li><strong>Multimodal Validation:</strong> Vision Language Models (LLaVA, Qwen-VL) for False Positive Filtering</li>
+            </ul>
+            <div class="skill-badge-row">
+              <span class="badge">YOLOv8</span>
+              <span class="badge">OpenCV</span>
+              <span class="badge">Dlib 68-pt</span>
+              <span class="badge">ANPR</span>
+              <span class="badge">LLaVA</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Machine Learning & Data Science -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Machine Learning & Data Science</h3>
+                <span class="skill-card-subtitle">Modeling, Scikit-Learn & Dimensional ETL</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-Learn, NumPy, Pandas, SciPy, Joblib</li>
+              <li><strong>Data Modeling:</strong> Star-Schema Dimensional Modeling (Fact & Dimension Tables)</li>
+              <li><strong>Automated Ingestion:</strong> Web Scraping (BeautifulSoup, Requests), Robust Preprocessing Pipelines</li>
+              <li><strong>Predictive Analytics:</strong> Risk Scoring, Credit Classification, Exploratory Data Analysis (EDA)</li>
+            </ul>
+            <div class="skill-badge-row">
+              <span class="badge">PyTorch</span>
+              <span class="badge">Scikit-Learn</span>
+              <span class="badge">Pandas</span>
+              <span class="badge">Star Schema</span>
+              <span class="badge">NumPy</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: Enterprise Automation & Integration -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-card-title">Enterprise Automation & Integration</h3>
+                <span class="skill-card-subtitle">Intelligent Document Parsing & Workflows</span>
+              </div>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Document Intelligence:</strong> Azure Document Intelligence Form & Table Parsing</li>
+              <li><strong>Workflow Orchestration:</strong> Microsoft Power Automate, Logic Apps, Egnyte Cloud Storage</li>
+              <li><strong>Human-in-the-Loop:</strong> Approval Workflows, Live Bid Matching, Automated Calendar Dispatch</li>
+              <li><strong>Enterprise Reliability:</strong> Fault-Tolerant Hourly Polling, Security, Role-Based Access Control</li>
+            </ul>
+            <div class="skill-badge-row">
+              <span class="badge">Azure Doc AI</span>
+              <span class="badge">Power Automate</span>
+              <span class="badge">Egnyte</span>
+              <span class="badge">HITL</span>
+              <span class="badge">RBAC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Professional Work Experience</h2>
+          <p class="section-subtitle">
+            Demonstrated track record of delivering high-stakes engineering projects with verifiable production metrics.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1: FutureVision -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Engineer &ndash; AI/ML</h3>
+                  <div class="company-name">FutureVision &bull; <span class="location">Remote</span></div>
+                </div>
+                <span class="timeline-date">Jul 2026 &ndash; Present</span>
+              </div>
+              <p class="timeline-summary">
+                Building and deploying production computer vision and facial-analysis systems for Australian clients, serving PyTorch and ONNX deep learning models behind high-throughput FastAPI microservice backends.
+              </p>
+              <ul class="timeline-points">
+                <li><strong>Rayted Platform:</strong> Trained classification and regression models for dermatological condition screening (23-class screening, 18-metric severity scoring) and facial symmetry analysis using facial landmark extraction to compute per-region alignment metrics.</li>
+                <li><strong>Biometric AI Pipelines:</strong> Built end-to-end computer vision pipelines for facial morphometry, biological age/gender estimation, and multi-angle facial orientation analysis.</li>
+                <li><strong>Agentic Recommendation Layers:</strong> Designed LangChain and LangGraph agent layers to aggregate multi-model outputs into structured, personalized recommendations exposed through authenticated REST APIs.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">ONNX Runtime</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">LangGraph</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: HanuAI Private Limited -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Engineer &ndash; AI/ML</h3>
+                  <div class="company-name">HanuAI Private Limited &bull; <span class="location">Mohali, India</span></div>
+                </div>
+                <span class="timeline-date">May 2023 &ndash; Jul 2026</span>
+              </div>
+              <p class="timeline-summary">
+                Led core machine learning development, video analytics pipelines, and MLOps infrastructure across transportation, road infrastructure, and surveillance domains.
+              </p>
+              <ul class="timeline-points">
+                <li><strong>Road Asset Detection (NHAI):</strong> Engineered an end-to-end computer vision system utilizing YOLO and Transformer architectures to detect road signs, highway anomalies, and GPS-tagged assets across 500+ km of highway data. Trained on 15,000+ custom-annotated images achieving 92% mAP (18% above baseline), with automated ETL preprocessing reducing manual survey effort by 60%.</li>
+                <li><strong>Automatic Number Plate Recognition (ANPR):</strong> Deployed a real-time YOLO + OCR system achieving 98% detection accuracy at 30 FPS on live video feeds; containerized with Docker on AWS EC2, with automatic plate blurring for privacy compliance and REST API database integration for vehicle lookup and logging.</li>
+                <li><strong>Driver Fatigue & Alertness Monitoring:</strong> Developed a real-time CNN-based model with 95% accuracy for driver fatigue and distraction alerting; integrated model monitoring in production, reducing manual monitoring by 70% and operational costs by 35%.</li>
+                <li><strong>Furniture Anomaly Detection:</strong> Delivered an object detection product with 90% precision, deployed as a Dockerized microservice across 5 client environments on HanuAI's core monitoring platform.</li>
+                <li><strong>MLOps Benchmarking Framework:</strong> Built a modular benchmarking framework (precision, recall, F1-score, inference speed) with CI/CD hooks for automated model evaluation; adopted across 8 internal projects, cutting evaluation time by 40%.</li>
+                <li><strong>Vision Language Model (VLM) Pipeline:</strong> Integrated LLaVA and Qwen-VL into an automated review pipeline to filter false positives and false negatives from detection outputs via REST APIs.</li>
+                <li><strong>Internal QA Platform:</strong> Designed a full-stack Django dashboard deployed on AWS EC2 via Docker, featuring real-time data filtering, annotation review workflows, and role-based access control.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">YOLOv8</span>
+                <span class="tag">AWS EC2</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Django</span>
+                <span class="tag">ANPR & OCR</span>
+                <span class="tag">MLOps</span>
+                <span class="tag">LLaVA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3: Enterprise Workflow Automation -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Enterprise Workflow Automation Architect</h3>
+                  <div class="company-name">Enterprise Systems &bull; <span class="location">Remote</span></div>
+                </div>
+                <span class="timeline-date">Contract Delivery</span>
+              </div>
+              <p class="timeline-summary">
+                Architected an automated 9-step RFP ingestion and parsing pipeline using Microsoft Power Automate, Azure Document Intelligence, and Egnyte cloud storage.
+              </p>
+              <ul class="timeline-points">
+                <li>Implemented hourly folder polling, automated requirement summarization, deadline date extraction into calendar invites, and database-backed subcontractor matching.</li>
+                <li>Integrated human-in-the-loop validation dashboards for automated proposal review and bid tracking, reducing manual RFP review turnaround time by 65%.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Azure Doc Intelligence</span>
+                <span class="tag">Power Automate</span>
+                <span class="tag">Egnyte</span>
+                <span class="tag">REST APIs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Open Source & Systems</span>
+          <h2 class="section-title">Featured Production Repositories</h2>
+          <p class="section-subtitle">
+            Individually published, production-grade repositories with modular architectures, comprehensive documentation, and zero emojis.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All Systems (6)</button>
+          <button class="filter-btn" data-filter="rag">GenAI & RAG (3)</button>
+          <button class="filter-btn" data-filter="cv">Computer Vision (1)</button>
+          <button class="filter-btn" data-filter="ml">ML & Analytics (2)</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: DocMind-Hybrid-RAG -->
+          <article class="project-card" data-category="rag">
+            <div class="project-header">
+              <div class="project-category-badge">Enterprise GenAI</div>
+              <a href="https://github.com/FresherMen/DocMind-Hybrid-RAG" target="_blank" rel="noopener noreferrer" class="project-github-link" title="View Source on GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/FresherMen/DocMind-Hybrid-RAG" target="_blank" rel="noopener noreferrer">DocMind-Hybrid-RAG</a>
+            </h3>
+            <p class="project-desc">
+              Production full-stack hybrid retrieval engine combining dense vector search (ChromaDB) with sparse lexical matching (BM25) via Reciprocal Rank Fusion (RRF). Features LLM multi-query expansion, contextual chunk compression, automated RAGAS evaluation, and Docker Compose deployment.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Search Strategy</span>
+                <span class="metric-value">Hybrid RRF + BM25</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Evaluation</span>
+                <span class="metric-value">RAGAS Faithfulness</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React 18</span>
+              <span class="tech-tag">ChromaDB</span>
+              <span class="tech-tag">Docker Compose</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Autonomous-AI-Research-Agent -->
+          <article class="project-card" data-category="rag">
+            <div class="project-header">
+              <div class="project-category-badge">Autonomous Agent</div>
+              <a href="https://github.com/FresherMen/Autonomous-AI-Research-Agent" target="_blank" rel="noopener noreferrer" class="project-github-link" title="View Source on GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/FresherMen/Autonomous-AI-Research-Agent" target="_blank" rel="noopener noreferrer">Autonomous-AI-Research-Agent</a>
+            </h3>
+            <p class="project-desc">
+              Autonomous multi-step research assistant powered by Groq LLaMA 3.3 70B with native function calling. Autonomously dispatches between document vector search, live web queries, and persistent markdown note taking across multi-iteration ReAct loops with an automated report synthesizer.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Inference Engine</span>
+                <span class="metric-value">Groq LLaMA 3.3 70B</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Pattern</span>
+                <span class="metric-value">Autonomous ReAct</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React 19</span>
+              <span class="tech-tag">Groq LPU</span>
+              <span class="tech-tag">ChromaDB</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Financial-Analyst-RAG -->
+          <article class="project-card" data-category="rag">
+            <div class="project-header">
+              <div class="project-category-badge">Quantitative RAG</div>
+              <a href="https://github.com/FresherMen/Financial-Analyst-RAG" target="_blank" rel="noopener noreferrer" class="project-github-link" title="View Source on GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/FresherMen/Financial-Analyst-RAG" target="_blank" rel="noopener noreferrer">Financial-Analyst-RAG</a>
+            </h3>
+            <p class="project-desc">
+              Specialized financial intelligence assistant for analyzing complex corporate annual filings (SEC Form 10-K). Engineered with deterministic temperature=0 prompting, LangChain orchestration, Pinecone serverless vector indexing, and expandable source verification.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Vector Store</span>
+                <span class="metric-value">Pinecone Serverless</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Interface</span>
+                <span class="metric-value">Streamlit Dashboard</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">Pinecone</span>
+              <span class="tech-tag">Groq LLaMA 3.3</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+          </article>
+
+          <!-- Project 4: driver-drowsiness-detection -->
+          <article class="project-card" data-category="cv">
+            <div class="project-header">
+              <div class="project-category-badge">Computer Vision</div>
+              <a href="https://github.com/FresherMen/driver-drowsiness-detection" target="_blank" rel="noopener noreferrer" class="project-github-link" title="View Source on GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/FresherMen/driver-drowsiness-detection" target="_blank" rel="noopener noreferrer">driver-drowsiness-detection</a>
+            </h3>
+            <p class="project-desc">
+              Real-time video analytics pipeline monitoring driver alertness through facial landmark localization and continuous Eye Aspect Ratio (EAR) calculation. Features modular state machine alarm logic triggered across consecutive-frame thresholds at 30 FPS.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Speed</span>
+                <span class="metric-value">30 FPS Real-Time</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Formulation</span>
+                <span class="metric-value">68-Pt Landmark EAR</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">SciPy</span>
+              <span class="tech-tag">Imutils</span>
+            </div>
+          </article>
+
+          <!-- Project 5: loan-default-prediction -->
+          <article class="project-card" data-category="ml">
+            <div class="project-header">
+              <div class="project-category-badge">Supervised ML</div>
+              <a href="https://github.com/FresherMen/loan-default-prediction" target="_blank" rel="noopener noreferrer" class="project-github-link" title="View Source on GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/FresherMen/loan-default-prediction" target="_blank" rel="noopener noreferrer">loan-default-prediction</a>
+            </h3>
+            <p class="project-desc">
+              End-to-end credit risk scoring classification pipeline evaluating applicant demographic, credit history, and financial risk attributes. Includes rigorous pre-processing, categorical encoding, model serialisation with Joblib, and a clean Flask web service.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Model Pipeline</span>
+                <span class="metric-value">Scikit-Learn Classifier</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Deployment</span>
+                <span class="metric-value">Flask Web Service</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Joblib</span>
+            </div>
+          </article>
+
+          <!-- Project 6: t20-cricket-analytics -->
+          <article class="project-card" data-category="ml">
+            <div class="project-header">
+              <div class="project-category-badge">Data Engineering</div>
+              <a href="https://github.com/FresherMen/t20-cricket-analytics" target="_blank" rel="noopener noreferrer" class="project-github-link" title="View Source on GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/FresherMen/t20-cricket-analytics" target="_blank" rel="noopener noreferrer">t20-cricket-analytics</a>
+            </h3>
+            <p class="project-desc">
+              Automated web scraping pipeline from ESPNcricinfo, data transformation in Pandas, and star-schema dimensional modeling (fact and dimension tables) evaluating performance metrics across match phases to select an optimal tournament team.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Architecture</span>
+                <span class="metric-value">Star-Schema Modeling</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Data Ingestion</span>
+                <span class="metric-value">Automated Scraper</span>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Web Scraping</span>
+              <span class="tech-tag">Data Warehousing</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume & Education Section -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Resume & Academic Background</h2>
+          <p class="section-subtitle">
+            Formal engineering foundations coupled with deep commercial experience in production AI engineering.
+          </p>
+        </div>
+
+        <div class="resume-wrapper">
+          <div class="education-card">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="edu-details">
+              <span class="edu-degree">Bachelor of Technology (B.Tech) &ndash; Computer Engineering</span>
+              <h3 class="edu-institution">Punjab Technical University</h3>
+              <div class="edu-meta">
+                <span>Punjab, India</span> &bull; <span>Jan 2019 &ndash; May 2023</span> &bull; <strong class="cgpa-badge">CGPA: 7.8 / 10</strong>
+              </div>
+              <p class="edu-desc">
+                Core coursework in Data Structures & Algorithms, Distributed Systems, Operating Systems, Database Management Systems, Machine Learning, and Computer Vision.
+              </p>
+            </div>
+          </div>
+
+          <div class="resume-cta-box">
+            <div class="resume-cta-text">
+              <h3 class="resume-cta-title">Official Resume (Updated 2026)</h3>
+              <p class="resume-cta-desc">
+                Comprehensive PDF document detailing technical projects, client deliverables, publications, and commercial impact metrics.
+              </p>
+            </div>
+            <div class="resume-cta-buttons">
+              <a href="./Ankur_Pal_Resume.pdf" target="_blank" class="btn btn-secondary">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <span>View Online</span>
+              </a>
+              <a href="./Ankur_Pal_Resume.pdf" download class="btn btn-primary">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Console Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-tag">Direct Communication</span>
+            <h2 class="section-title">Let's Build Something Impactful</h2>
+            <p class="section-subtitle">
+              Open to senior AI/ML Software Engineering roles, production GenAI consulting, and cloud architecture engagements.
+            </p>
+          </div>
+
+          <div class="contact-channels">
+            <!-- Email Item -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Direct Email</span>
+                <span class="channel-value" id="email-value">palsaab1966@gmail.com</span>
+              </div>
+              <button class="channel-action-btn" id="copy-email-btn" title="Copy Email Address">
+                <svg class="icon icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn Item -->
+            <a href="https://linkedin.com/in/ankur-pal-9854191a3" target="_blank" rel="noopener noreferrer" class="channel-card link-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Professional Network</span>
+                <span class="channel-value">linkedin.com/in/ankur-pal-9854191a3</span>
+              </div>
+              <div class="channel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </div>
+            </a>
+
+            <!-- GitHub Item -->
+            <a href="https://github.com/FresherMen" target="_blank" rel="noopener noreferrer" class="channel-card link-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Open Source Codebase</span>
+                <span class="channel-value">github.com/FresherMen</span>
+              </div>
+              <div class="channel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </div>
+            </a>
+          </div>
+
+          <!-- Interactive Terminal Prompt -->
+          <div class="terminal-box">
+            <div class="terminal-bar">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">ankur@production-node:~$</span>
+            </div>
+            <div class="terminal-body">
+              <p class="term-line"><span class="term-prompt">&gt;</span> <span class="term-cmd">system.status</span></p>
+              <p class="term-out">STATUS: ONLINE &bull; READY FOR HIGH-THROUGHPUT AI WORKLOADS</p>
+              <p class="term-line"><span class="term-prompt">&gt;</span> <span class="term-cmd">system.location</span></p>
+              <p class="term-out">MOHALI, INDIA (REMOTE WORLDWIDE AVAILABLE)</p>
+              <p class="term-line"><span class="term-prompt">&gt;</span> <span class="term-cmd">curl -X POST /hire -d '{"engineer": "Ankur Pal"}'</span></p>
+              <p class="term-out green-text">{ "status": 200, "message": "Collaboration initialized. Email sent to palsaab1966@gmail.com" }</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Ankur Pal</span>
+        <span class="footer-divider">&bull;</span>
+        <span class="footer-copy">&copy; 2026 Ankur Pal. All rights reserved. Zero emojis, pure engineering.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" id="back-to-top">
+          <span>Back to Top</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
