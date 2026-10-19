@@ -1605,6 +1605,13 @@ a {
   margin-bottom: 2.5rem;
 }
 
+.contact-channels.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
 .channel-card {
   background: var(--ap-card-glass);
   border: 1px solid var(--gold-hairline);
@@ -2002,7 +2009,8 @@ a {
     grid-column: span 2;
   }
 
-  .contact-channels.two-col {
+  .contact-channels.two-col,
+  .contact-channels.three-col {
     grid-template-columns: 1fr;
   }
 
